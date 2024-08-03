@@ -56,11 +56,11 @@ function Countdown({ hour, min, sec = 0 }: CountdownProps) {
       <CardHeader className="border-b">
         <CardTitle className="text-center">Server Save</CardTitle>
       </CardHeader>
-      <CardContent className="p-2">
+      {/* <CardContent className="p-2">
         <div className={`text-center p-2 text-xl border rounded-sm `}>
           {`${formattedCountdown.hours}:${formattedCountdown.minutes}:${formattedCountdown.seconds}`}
         </div>
-      </CardContent>
+      </CardContent> */}
     </Card>
 
   );

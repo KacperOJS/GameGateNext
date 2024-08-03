@@ -65,8 +65,8 @@ maxMarketOffersAtATimePerPlayer = 100
 
 mysqlHost = "127.0.0.1"
 mysqlUser = "root"
-mysqlPass = "@@152535"
-mysqlDatabase = "justus"
+mysqlPass = ""
+mysqlDatabase = "tibia"
 mysqlPort = 3306
 mysqlSock = ""
 passwordType = "sha1"

@@ -1,0 +1,40 @@
+.main-menu__accordion {
+	space-y-1: 1rem;
+	padding: 0;
+	display: flex;
+  }
+  
+  .main-menu__accordion-item {
+	border: none;
+	padding: 0;
+	position: relative;
+  }
+  
+  .main-menu__accordion-trigger {
+	padding: 1rem;
+	background-color: #f3f4f6;
+	border-radius: 0.125rem;
+	text-decoration: none;
+  }
+  
+  .main-menu__accordion-content {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-menu__button {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	color: black;
+	hover {
+	  color: #9b2c2c;
+	  background-color: white;
+	}
+	box-shadow: none;
+  }
+  

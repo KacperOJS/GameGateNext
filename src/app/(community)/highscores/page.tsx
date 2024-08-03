@@ -11,6 +11,7 @@ import FilterCategory from "./components/category";
 import { convertBigIntsToNumbers } from "@/utils/functions/convertBigIntsToNumbers";
 import Link from "next/link";
 
+
 const columnName = {
   skill_axe: 'Axe Fighting',
   skill_club: "Club Fighting",
@@ -33,7 +34,13 @@ export default async function HighScores({ searchParams }: { searchParams?: { vo
   const vocation = searchParams?.vocation || '';
   const category = searchParams?.category || 'experience';
 
+
   const { players, totalPage } = await fetchCharacters({ currentPage, vocation, category });
+
+
+
+
+
 
 
   const itemsPerPage = 25;

@@ -82,6 +82,7 @@ function extractIdsFromArrayOfObjects(array: any) {
 }
 
 
+
 async function getSeverConfig(value: string) {
   const array1 = await prisma.$queryRaw<{ config: string, value: string }>`SELECT * from server_config WHERE config = ${value}`
 
@@ -193,9 +194,14 @@ export default async function RootLayout({
 						<Link href={process.env.YOUTUBE_URL ?? ' #'} className='flex flex-row items-center text-xs '>
                           <IconiFy icon={'line-md:youtube'} className='w-6' /> Donate
                         </Link> */}
-						<MainMenu />
-             
-    
+
+
+
+						<MainMenu /> 
+
+
+
+
                       </div>
 
                       <div className='flex items-center space-x-1 p-1 px-2'>
@@ -208,9 +214,13 @@ export default async function RootLayout({
                     </div>
                   </div>
 
-				  <div className='relative flex flex-col p-1 gap-2 bg-background/10 shadow rounded-md backdrop-blur-[6px] -z-10'>
-					{children}
-				  </div>
+
+      <div
+        className="relative flex flex-col p-1 gap-2 bg-background/10 shadow rounded-md backdrop-blur-[6px]"
+      >
+        {children}
+      </div>
+
 
               
 

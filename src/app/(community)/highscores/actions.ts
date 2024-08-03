@@ -22,6 +22,12 @@ export async function fetchCharacters({ currentPage, vocation, category }: { voc
   const offset = (currentPage - 1) * ITEMS_PER_PAGE;
 
   try {
+	// const Level = await prisma.players.findMany({
+	// 	orderBy: {
+	// 	  experience: 'desc', // Sorts by experience in descending order
+	// 	},
+	//   });
+
     const count = await prisma.players.count({
       where: {
         AND: [
